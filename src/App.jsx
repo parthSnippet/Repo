@@ -82,7 +82,7 @@ export default function App() {
           <div className="hero-avatar">👨‍💻</div>
           <div className="hero-badge"><span />Available for work</div>
           <h1>
-            Hi, I'm <span className="gradient-text">Parth</span>
+            Hi, I'm <span className="gradient-text">Parth Rohit</span>
             <br />Full-Stack Developer
           </h1>
           <p>I craft fast, beautiful web experiences — from pixel-perfect UIs to scalable back-end systems.</p>
