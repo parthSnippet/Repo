@@ -3,27 +3,27 @@ pipeline {
 
     stages {
 
-        // stage('Clone') {
-        //     steps {
-        //         git 'https://github.com/parthSnippet/Repo.git'
-        //     }
-        // }
-
         stage('Install') {
             steps {
                 bat 'npm install'
             }
         }
 
-        stage('Test') {
+        stage('Lint') {
             steps {
-                bat 'npm test'
+                bat 'npm run lint'
             }
         }
 
-        stage('Run') {
+        stage('Build') {
             steps {
-                bat 'node index.js &'
+                bat 'npm run build'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                bat 'npm test'
             }
         }
     }
