@@ -12,6 +12,7 @@ const skills = [
   { icon: '☁️', name: 'AWS' },
   { icon: '🔧', name: 'Git' },
   { icon: '⚡', name: 'Vite' },
+  { icon: '🔨', name: 'Jenkins' },
 ]
 
 const projects = [
@@ -78,17 +79,32 @@ export default function App() {
       <section className="hero" id="hero">
         <div className="hero-bg" />
         <div className="hero-grid" />
+        <div className="particles">
+          {[...Array(20)].map((_, i) => <div key={i} className="particle" style={{ '--i': i }} />)}
+        </div>
         <div className="hero-content">
-          <div className="hero-avatar">👨‍💻</div>
+          <div className="hero-avatar">
+            <span className="avatar-emoji">👨💻</span>
+            <div className="avatar-ring" />
+            <div className="avatar-ring" style={{ animationDelay: '1s' }} />
+          </div>
           <div className="hero-badge"><span />Available for work</div>
           <h1>
-            Hi, I'm <span className="gradient-text">Parth Rohit</span>
-            <br />Full-Stack Developer
+            <span className="text-reveal">Hi, I'm </span>
+            <span className="gradient-text glitch" data-text="Parth Rohit">Parth Rohit</span>
+            <br />
+            <span className="text-reveal" style={{ animationDelay: '0.3s' }}>Full-Stack Developer</span>
           </h1>
-          <p>I craft fast, beautiful web experiences — from pixel-perfect UIs to scalable back-end systems.</p>
+          <p className="hero-desc">I craft fast, beautiful web experiences — from pixel-perfect UIs to scalable back-end systems.</p>
           <div className="hero-btns">
-            <a href="#projects" className="btn-primary">View My Work</a>
-            <a href="#contact" className="btn-outline">Get In Touch</a>
+            <a href="#projects" className="btn-primary">
+              <span>View My Work</span>
+              <span className="btn-shine" />
+            </a>
+            <a href="#contact" className="btn-outline">
+              <span>Get In Touch</span>
+              <span className="btn-arrow">→</span>
+            </a>
           </div>
         </div>
       </section>
