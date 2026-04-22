@@ -82,7 +82,7 @@ export default function App() {
           <div className="hero-avatar">👨‍💻</div>
           <div className="hero-badge"><span />Available for work</div>
           <h1>
-            Hi, I'm <span className="gradient-text">Alex Chen</span>
+            Hi, I'm <span className="gradient-text">Parth Rohit</span>
             <br />Full-Stack Developer
           </h1>
           <p>I craft fast, beautiful web experiences — from pixel-perfect UIs to scalable back-end systems.</p>
@@ -175,7 +175,7 @@ export default function App() {
                 Have a project in mind or just want to say hi? My inbox is always open.
               </p>
               <div className="contact-links">
-                <a href="mailto:alex@example.com" className="contact-link">📧 alex@example.com</a>
+                <a href="mailto:parthatwork24@gmail.com" className="contact-link">📧 parthatwork24@gmail.com</a>
                 <a href="https://github.com" className="contact-link" target="_blank" rel="noreferrer">🐙 GitHub</a>
                 <a href="https://linkedin.com" className="contact-link" target="_blank" rel="noreferrer">💼 LinkedIn</a>
                 <a href="https://twitter.com" className="contact-link" target="_blank" rel="noreferrer">🐦 Twitter</a>
@@ -186,7 +186,7 @@ export default function App() {
       </section>
 
       <footer>
-        <p>Designed & built by <span className="gradient-text" style={{ fontWeight: 700 }}>Alex Chen</span> · {new Date().getFullYear()}</p>
+        <p>Designed & built by <span className="gradient-text" style={{ fontWeight: 700 }}>Parth Rohit</span> · {new Date().getFullYear()}</p>
       </footer>
     </>
   )
