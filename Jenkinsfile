@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone') {
             steps {
-                git 'https://github.com/parthSnippet/Repo.git  ✅'
+                git 'https://github.com/parthSnippet/Repo.git'
             }
         }
 
