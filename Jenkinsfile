@@ -3,11 +3,11 @@ pipeline {
 
     stages {
 
-        stage('Clone') {
-            steps {
-                git 'https://github.com/parthSnippet/Repo.git'
-            }
-        }
+        // stage('Clone') {
+        //     steps {
+        //         git 'https://github.com/parthSnippet/Repo.git'
+        //     }
+        // }
 
         stage('Install') {
             steps {
