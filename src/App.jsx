@@ -66,7 +66,7 @@ export default function App() {
     <>
       {/* Nav */}
       <nav className="nav">
-        <span className="nav-logo">&lt;Alex /&gt;</span>
+        <span className="nav-logo">&lt;Parth /&gt;</span>
         <ul className="nav-links">
           {['About', 'Skills', 'Projects', 'Contact'].map(s => (
             <li key={s}><a href={`#${s.toLowerCase()}`}>{s}</a></li>
