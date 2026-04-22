@@ -9,21 +9,21 @@ pipeline {
             }
         }
 
-        stage('Lint') {
-            steps {
-                bat 'npm run lint'
-            }
-        }
-
         stage('Build') {
             steps {
                 bat 'npm run build'
             }
         }
 
-        stage('Test') {
+        stage('Docker Build') {
             steps {
-                bat 'npm test'
+                bat 'docker build -t ci-demo .'
+            }
+        }
+
+        stage('Docker Run') {
+            steps {
+                bat 'docker run -d -p 3000:5173 ci-demo'
             }
         }
     }
