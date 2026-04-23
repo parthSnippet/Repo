@@ -1,10 +1,12 @@
 import { motion } from 'framer-motion'
+import { Mail } from 'lucide-react'
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 
 const contactLinks = [
-  { icon: '📧', text: 'parthatwork24@gmail.com', href: 'mailto:parthatwork24@gmail.com' },
-  { icon: '🐙', text: 'GitHub', href: 'https://github.com' },
-  { icon: '💼', text: 'LinkedIn', href: 'https://linkedin.com' },
-  { icon: '🐦', text: 'Twitter', href: 'https://twitter.com' },
+  { icon: Mail, text: 'parthatwork24@gmail.com', href: 'mailto:parthatwork24@gmail.com' },
+  { icon: FaGithub, text: 'GitHub', href: 'https://github.com' },
+  { icon: FaLinkedin, text: 'LinkedIn', href: 'https://linkedin.com' },
+  { icon: FaTwitter, text: 'Twitter', href: 'https://twitter.com' },
 ]
 
 export default function Contact() {
@@ -60,9 +62,9 @@ export default function Contact() {
                   <motion.span
                     whileHover={{ rotate: 360, scale: 1.2 }}
                     transition={{ duration: 0.5 }}
-                    className="text-xl relative z-10"
+                    className="relative z-10"
                   >
-                    {link.icon}
+                    <link.icon className="w-5 h-5 text-[#06b6d4]" />
                   </motion.span>
                   <span className="relative z-10">{link.text}</span>
                 </motion.a>

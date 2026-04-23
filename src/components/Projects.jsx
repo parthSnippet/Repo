@@ -1,8 +1,9 @@
 import { motion } from 'framer-motion'
+import { ShoppingCart, MessageCircle, BarChart3, ExternalLink, Code } from 'lucide-react'
 
 const projects = [
   {
-    icon: '🛒',
+    icon: ShoppingCart,
     title: 'ShopFlow',
     desc: 'Full-stack e-commerce platform with real-time inventory, Stripe payments, and an admin dashboard.',
     tags: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
@@ -10,7 +11,7 @@ const projects = [
     code: '#',
   },
   {
-    icon: '💬',
+    icon: MessageCircle,
     title: 'ChatSphere',
     desc: 'Real-time messaging app with rooms, file sharing, and end-to-end encryption.',
     tags: ['React', 'Socket.io', 'Redis', 'Docker'],
@@ -18,7 +19,7 @@ const projects = [
     code: '#',
   },
   {
-    icon: '📊',
+    icon: BarChart3,
     title: 'DataViz Studio',
     desc: 'Interactive data visualization dashboard with drag-and-drop chart builder and CSV import.',
     tags: ['React', 'D3.js', 'TypeScript'],
@@ -77,9 +78,9 @@ export default function Projects() {
                 <motion.div
                   whileHover={{ scale: 1.2, rotate: 10 }}
                   transition={{ type: 'spring', stiffness: 200 }}
-                  className="text-5xl mb-5"
+                  className="mb-5"
                 >
-                  {project.icon}
+                  <project.icon className="w-12 h-12 text-[#06b6d4]" />
                 </motion.div>
                 
                 <h3 className="text-2xl font-bold mb-3 bg-gradient-to-r from-slate-100 to-[#06b6d4] bg-clip-text text-transparent">
@@ -107,14 +108,14 @@ export default function Projects() {
                     whileHover={{ scale: 1.05, x: 3 }}
                     className="flex items-center gap-2 text-slate-400 hover:text-[#06b6d4] transition-colors"
                   >
-                    <span className="text-lg">🔗</span> Live Demo
+                    <ExternalLink className="w-4 h-4" /> Live Demo
                   </motion.a>
                   <motion.a
                     href={project.code}
                     whileHover={{ scale: 1.05, x: 3 }}
                     className="flex items-center gap-2 text-slate-400 hover:text-[#06b6d4] transition-colors"
                   >
-                    <span className="text-lg">⌨️</span> Code
+                    <Code className="w-4 h-4" /> Code
                   </motion.a>
                 </div>
               </div>

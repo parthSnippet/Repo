@@ -11,6 +11,7 @@ const skills = [
   { icon: Container, name: 'Docker' },
   { icon: Cloud, name: 'AWS' },
   { icon: GitBranch, name: 'Git' },
+  
 ]
 
 export default function Skills() {

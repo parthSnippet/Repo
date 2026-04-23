@@ -59,7 +59,6 @@ pipeline {
             }
         }
 
-        //  YAHAN paste kar
         stage('Docker Build') {
             steps {
                 bat 'docker build -t ci-demo .'
