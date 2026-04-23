@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-
-
 /* Base styles */
 html {
   scroll-behavior: smooth;
@@ -14,6 +12,29 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Focus styles for accessibility */
+*:focus {
+  outline: 2px solid #7c3aed;
+  outline-offset: 2px;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none;
 }
 
 /* Scrollbar */
@@ -74,4 +95,12 @@ body {
 /* Remove any default margins/paddings that might cause issues */
 section {
   position: relative;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .gradient-text {
+    -webkit-text-fill-color: #ffffff;
+    background: none;
+  }
 }

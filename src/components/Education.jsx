@@ -63,16 +63,16 @@ export default function Education() {
               <motion.div
                 whileHover={{ rotate: 12, scale: 1.1 }}
                 transition={{ type: 'spring', stiffness: 200 }}
-                className="w-24 h-24 flex-shrink-0 flex items-center justify-center text-5xl bg-gradient-to-br from-[#7c3aed]/30 to-[#06b6d4]/30 border-2 border-[#7c3aed]/40 rounded-2xl relative z-10"
+                className="w-24 h-24 flex-shrink-0 flex items-center justify-center bg-gradient-to-br from-[#7c3aed]/30 to-[#06b6d4]/30 border-2 border-[#7c3aed]/40 rounded-2xl relative z-10"
               >
-                <edu.icon className="text-4xl text-[#06b6d4]" />
+                <edu.icon className="w-12 h-12 text-[#06b6d4]" />
               </motion.div>
               
               <div className="flex-1 relative z-10 min-w-0">
                 <h3 className="text-2xl font-bold mb-2 bg-gradient-to-r from-slate-100 to-[#06b6d4] bg-clip-text text-transparent">
                   {edu.degree}
                 </h3>
-                <div className="text-lg font-semibold text-[#06b6d4] mb-3">{edu.school}</div>
+                <div className="text-lg font-semibold text-[#06b6d4] mb-3">{edu.University}</div>
                 <div className="inline-flex items-center gap-2 text-sm text-slate-400 bg-[#7c3aed]/15 px-4 py-2 rounded-full border border-[#7c3aed]/30 mb-4">
                   <Calendar className="text-[#06b6d4] w-4 h-4" />
                   <span>{edu.period}</span>
